@@ -1,6 +1,6 @@
 /*
  Name: Zachary West & Chase Berkey
- Email: zjwest1@crimson.ua.edu & ccBerkey@crimson.ua.edu
+ Email: zwest2563@gmail.com & ccBerkey@crimson.ua.edu
  Course Section: Spring 2025 CS 201-002
  Homework #: 0
  Instructions to Compile:

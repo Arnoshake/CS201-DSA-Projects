@@ -2,11 +2,11 @@
 
 /*
  Name: Zachary West
- Email: Zjwest1@crimson.ua.edu
+ Email: zwest2563@gmail.com
  Course Section: Spring 2025 CS 201-002
  Homework #: 2
 
- To compile: g++ -std=c++11 parsetext.cpp
+ To compile: g++ -std=c++11 main.cpp
  To run: ./a.out < input.txt
 */
 #include <iostream>
