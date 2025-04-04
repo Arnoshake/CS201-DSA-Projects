@@ -1,6 +1,6 @@
 #ifndef _RBTNODE_HPP_
 #define _RBTNODE_HPP_
-
+//INSTRUCTOR PROVIDED
 template <class Key, class Type>
 class RBTNode {
 public:
