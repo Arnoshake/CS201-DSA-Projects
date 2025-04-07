@@ -2,7 +2,7 @@
 
 Author: **Zachary West**  
 Email: [zwest2563@gmail.com](mailto:zwest2563@gmail.com)  
-Course Section: **Spring 2025 CS 201-002**  
+Course Section: **Spring 2025 CS 201**  
 
 ---
 
@@ -53,8 +53,8 @@ MovieName (Year)/lastName1, firstName1/lastName2, firstName2/.../lastNameN, firs
 
 The Matrix (1999)/Reeves, Keanu/Fishburne, Laurence/Moss, Carrie-Anne/...
 ```
-Each line of the query file should be structured as follows:
-
+Each line of the query file should be structured so that each line is a movie or actor of interest
+EXAMPLE:
 ```
 The Matrix (1999)
 Reeves, Keanu
