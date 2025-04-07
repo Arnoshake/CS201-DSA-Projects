@@ -35,7 +35,7 @@ g++ -std=c++11 -o movieSorting movieSorting.cpp
 
 ---
 
-## ▶️ Execution Instructions
+## Execution Instructions
 
 To execute the program:
 
