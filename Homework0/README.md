@@ -54,9 +54,9 @@ To execute the program:
 Each line of the input file should be structured as follows:
 
 ```
-MovieName(Year)/lastName1, firstName1/lastName2, firstName2/.../lastNameN, firstNameN
+MovieName(Year) /lastName1, firstName1/lastName2, firstName2/.../lastNameN, firstNameN
 
-The Matrix(1999)/Reeves, Keanu/Fishburne, Laurence/Moss, Carrie-Anne/...
+The Matrix(1999) /Reeves, Keanu/Fishburne, Laurence/Moss, Carrie-Anne/...
 ```
 
 ---
