@@ -78,3 +78,9 @@ Each line maintains the original format.
 - The program uses `std::chrono` for precise timing.
 - Lambda functions are used in `std::sort()` for custom sorting logic.
 - Input validation is handled for command-line arguments and file opening.
+
+
+## License
+
+This project was created for academic purposes as part of coursework for CS 201 at the University of Alabama. Redistribution should follow academic integrity guidelines.
+
