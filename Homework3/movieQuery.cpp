@@ -1,6 +1,6 @@
 /*
  Name: Zachary West
- Email: zwest2563@gmail.com
+ Email: zjwest1@crimson.ua.edu
  Course Section: Spring 2025 CS 201-002
  Homework #: 0
  Instructions to Compile:
@@ -23,7 +23,7 @@
 #include <string> //file reading
 #include <algorithm> // std::sort
 
-#include <map>
+#include <unordered_map>
 
 #include <chrono> //timing
 using namespace std;
@@ -39,7 +39,7 @@ class Movie{
             actors = cast;
         }
 };
-bool printMap(std::map<std::string,std::vector<std::string> > mapOfInterest, std::string key){
+bool printMap(std::unordered_map<std::string,std::vector<std::string> > mapOfInterest, std::string key){
     if (mapOfInterest.find(key) == mapOfInterest.end()){ //key, val pair DNE
         return false; 
     }
@@ -64,9 +64,10 @@ int main(int argc, char* argv[]){
         cout << "ERROR: File failed to open! \n";
         return -1;
     }
-
-    map<std::string,std::vector<std::string> > queryActor; // (actor, movies)
-    map<std::string,std::vector<std::string> > queryMovie; // (movie, vector of actors)
+    int foundActors = 0;
+    int foundMovies = 0;
+    unordered_map<std::string,std::vector<std::string> > queryActor; // (actor, movies)
+    unordered_map<std::string,std::vector<std::string> > queryMovie; // (movie, vector of actors)
     
     auto startTimeDataStructureCreation = std::chrono::high_resolution_clock::now();
 
@@ -119,8 +120,9 @@ int main(int argc, char* argv[]){
     for (int i = 0; i < queryCommands.size(); i++){
         //check each map for a matching value, done so that the if statement does not exit early
         bool actorCheckPair = !printMap(queryActor, queryCommands.at(i));
+        if (!actorCheckPair) foundActors++;
         bool movieCheckPair = !printMap(queryMovie, queryCommands.at(i));
-
+        if (!movieCheckPair) foundMovies++;
         if (actorCheckPair && movieCheckPair) {
             std::cout << "This query (" << queryCommands.at(i) << ") returns no matches." << std::endl;
         }
@@ -130,6 +132,7 @@ int main(int argc, char* argv[]){
 
 
     //taking the established time checkpoints and casting them into the unit of miliseconds
+    std::cout << "Movies found: " << foundMovies << "\nActors found: " << foundActors << std::endl;
     auto totalTimeProgram = std::chrono::duration_cast<std::chrono::milliseconds>(endTimeOfProgram - startTimeOfProgram);
     auto totalDataStructureCreation = std::chrono::duration_cast<std::chrono::milliseconds>(endTimeDataStructureCreation - startTimeDataStructureCreation);
     auto totalSearch = std::chrono::duration_cast<std::chrono::milliseconds>(endTimeOfProgram - endTimeDataStructureCreation);
