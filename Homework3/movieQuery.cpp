@@ -1,8 +1,8 @@
 /*
  Name: Zachary West
- Email: zjwest1@crimson.ua.edu
+ Email: zwest2563@gmail.com
  Course Section: Spring 2025 CS 201-002
- Homework #: 0
+ Homework #: 3
  Instructions to Compile:
     I used the following statement to compile my code: "g++ -std=c++20 movieQuery.cpp "
  Instructions to Execute:
