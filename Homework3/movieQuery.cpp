@@ -46,7 +46,7 @@ bool printMap(std::unordered_map<std::string,std::vector<std::string> > mapOfInt
     else{
         std::cout << "*****" << key <<"*****" << std::endl;
         for (int i = 0; i < mapOfInterest[key].size();i++){
-        std::cout << (mapOfInterest[key]).at(i) <<std::endl;
+        std::cout << "\t" << (mapOfInterest[key]).at(i) <<std::endl;
         }
         return true;
     }
@@ -111,7 +111,7 @@ int main(int argc, char* argv[]){
 	std::cout << "***Reading query file " << argv[2] << "***" << std::endl;
     std::vector<std::string> queryCommands;
 	while (std::getline(queryfile, name)) {
-	   std::cout << "Query value:" << name << std::endl;
+	   //std::cout << "Query value:" << name << std::endl;
        queryCommands.push_back(name);
 	}
 	queryfile.close();
